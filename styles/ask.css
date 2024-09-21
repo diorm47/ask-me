@@ -1,0 +1,140 @@
+.ask_form_item input {
+  width: 100%;
+  border-radius: 12px;
+  height: 55px;
+  background: rgb(255, 255, 255);
+  border: none;
+  text-indent: 18px;
+  color: #000;
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.ask_form_item input::placeholder,
+.ask_form_item textarea::placeholder {
+  color: rgb(137, 154, 181);
+}
+.ask_form_item {
+  margin-bottom: 5px;
+}
+.ask_form_item textarea {
+  width: 100%;
+  border-radius: 12px;
+  height: 68px;
+  background: rgb(255, 255, 255);
+  border: none;
+  text-indent: 18px;
+  color: #000;
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-top: 13px;
+}
+
+.ask_form_item_actions {
+  display: flex;
+  align-items: center;
+  padding-left: 19px;
+  gap: 20px;
+}
+.ask_form_item_block_actions {
+  border-radius: 12px;
+
+  background: rgb(255, 255, 255);
+  padding-bottom: 16px;
+}
+.ask_form_item_actions div {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.ask_form_item_actions p {
+  color: rgb(137, 154, 181);
+  font-family: Nunito;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.select_category_filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  gap: 5px;
+}
+.select_category_filters .select_category_item {
+  width: 50%;
+}
+.select_category_item {
+  height: 55px;
+  border-radius: 12px;
+  padding: 19px;
+  background: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.select_category_item div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.select_category_item p {
+  color: rgb(137, 154, 181);
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.asf_form_actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ask_from_send_btn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.ask_from_send_btn p,
+.ask_from_send_btn p a {
+  color: rgb(137, 154, 181);
+  font-family: Nunito;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.ask_from_send_btn p a {
+  text-decoration: underline;
+}
+
+.chechbox_item {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.chechbox_item input {
+  border-radius: 6px;
+  width: 25px;
+  height: 25px;
+  background: rgb(98, 106, 255);
+  cursor: pointer;
+  border: none;
+}

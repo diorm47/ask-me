@@ -8,28 +8,7 @@
   background: url(../assets/images/category-bg.svg);
 }
 
-.pages_navigation {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-.pages_navigation p {
-  font-family: Nunito;
-  font-size: 13px;
-  font-weight: 500;
-  line-height: 18px;
-  letter-spacing: 0%;
-  text-align: left;
-  color: rgb(137, 154, 181);
-  cursor: pointer;
-}
-.pages_navigation span {
-  color: rgb(188, 197, 211);
-}
-.pages_navigation img {
-  width: 4px;
-}
+
 
 .category_page_block .blocks_title h2 {
   margin-right: 25px;
