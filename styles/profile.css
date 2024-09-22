@@ -1,0 +1,367 @@
+.profile_page {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 19px;
+}
+
+.profile_menu {
+  width: 18%;
+}
+.profile_menu_item {
+  width: 100%;
+  border-radius: 14px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background: rgb(255, 255, 255);
+  padding-left: 15px;
+  gap: 12px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.profile_stats {
+  width: 18%;
+}
+.profile_stats_item {
+  margin-bottom: 5px;
+  border-radius: 14px;
+  height: 50px;
+  width: 100%;
+  padding: 0 13px 0 19px;
+  background: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile_stats_item div {
+  border-radius: 12px;
+  height: 28px;
+  background: rgb(232, 234, 245);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.profile_page_content {
+  width: 63%;
+}
+.user_profile_block {
+  width: 100%;
+  position: relative;
+  border-radius: 22px;
+  padding: 16px 24px 20px;
+
+  margin-top: 52px;
+}
+
+.user_profile_block_bg {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+}
+
+.user_profile_block_rect {
+  position: absolute;
+  right: 40px;
+  top: 18px;
+}
+.user_profile_block_content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+
+.user_profile_image {
+  border: 1px solid rgb(255, 255, 255);
+  width: 83px;
+  height: 83px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user_profile_img {
+  position: relative;
+  width: 83px;
+  height: 83px;
+}
+.user_profile_img_action {
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  margin-left: -10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user_profile_block_content_profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.user_profile_block_content_profile_desc h4 {
+  color: rgb(31, 42, 59);
+  font-family: Nunito;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.user_profile_block_content_profile_desc p {
+  color: rgb(139, 148, 161);
+  font-family: Nunito;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.user_grades p {
+  color: rgb(31, 42, 59);
+  font-family: Nunito;
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.user_grade_line {
+  width: 120px;
+  height: 5px;
+  border-radius: 12px;
+  margin-top: 8px;
+  background: rgb(239, 240, 246);
+}
+
+.user_grade_line_value {
+  border-radius: 12px;
+  height: 5px;
+  background: linear-gradient(
+    158.51deg,
+    rgb(100, 107, 255) 49.568%,
+    rgb(87, 100, 255) 100.097%
+  );
+}
+
+.user_grades {
+  display: flex;
+  align-items: start;
+  gap: 50px;
+}
+
+.user_kpd {
+  display: flex;
+  align-items: start;
+  gap: 4px;
+}
+
+.user_profile_pages {
+  margin-top: 20px;
+}
+
+.user_profile_pages_1 .questions_filter {
+  margin-bottom: 15px;
+}
+
+.menu_item_content {
+  display: none;
+}
+.active_menu {
+  display: flex;
+}
+.user_profile_page_content {
+  width: 100%;
+}
+.user_profile_page_content_wrapper {
+  border-radius: 12px;
+  padding: 15px 20px 20px;
+  background: rgb(255, 255, 255);
+}
+
+.profile_input input {
+  box-sizing: border-box;
+  border: 2px solid rgb(239, 239, 246);
+  border-radius: 12px;
+  height: 50px;
+  text-indent: 19px;
+  color: #000;
+  font-family: Nunito;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: left;
+  width: 100%;
+}
+
+.profile_input input::placeholder,
+.profile_input textarea::placeholder {
+  color: rgb(139, 148, 161);
+}
+
+.profile_input p {
+  margin-bottom: 8px;
+}
+.profile_input input {
+  margin-bottom: 14px;
+}
+.profile_warning {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 17px;
+}
+
+.profile_input textarea {
+  box-sizing: border-box;
+  border: 2px solid rgb(239, 239, 246);
+  border-radius: 12px;
+  height: 98px;
+  width: 100%;
+  padding-top: 15px;
+  text-indent: 19px;
+}
+
+.profile_action_btns {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.cancel_btn {
+  border-radius: 12px;
+
+  background: rgb(239, 237, 245);
+}
+.profile_settings_top_titles {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+}
+.user_seting_item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 22px;
+}
+.profile_settings_top_titles p:first-child,
+.user_seting_item p:first-child {
+  width: 70%;
+}
+.profile_settings_top_titles p:last-child {
+  padding-left: 100px;
+}
+.user_seting_item input {
+  border-radius: 6px;
+  width: 20px;
+  height: 20px;
+  background: rgb(232, 232, 245);
+  cursor: pointer;
+}
+
+.user_seting_item input:nth-child(2) {
+  margin-left: 8px;
+}
+.user_seting_item input:last-child {
+  margin-left: 115px;
+}
+
+.play_music {
+  cursor: pointer;
+  margin-top: -12px;
+}
+.user_seting_item_sec .secondary_text:first-child {
+  width: 60%;
+}
+.user_theme_btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.select_themes {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.vip_status_card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 12px;
+  height: 51px;
+  padding: 10px 16px;
+  background: rgb(232, 232, 245);
+  margin: 20px 0 15px;
+  cursor: pointer;
+}
+
+.vip_status_card div {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+.vip_status_card div p {
+  color: rgb(31, 42, 59);
+  font-family: Nunito;
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 0%;
+  text-align: left;
+  margin: 0;
+}
+.vip_status_card div span {
+  padding-left: 12px;
+  line-height: 0;
+}
+
+.active_user_acc {
+  box-sizing: border-box;
+  border: 2px solid rgb(239, 239, 246);
+  border-radius: 12px;
+  margin: 10px 0;
+  height: 50px;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logout_btn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.payment_method {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 12px;
+  height: 70px;
+  padding: 0 24px 0 18px;
+  background: rgba(232, 232, 245, 0.244);
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.payment_method_type {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.payment_method input {
+  border-radius: 6px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}

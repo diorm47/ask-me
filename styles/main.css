@@ -17,7 +17,8 @@ button {
   border: none;
 }
 
-input, textarea {
+input,
+textarea {
   outline: none;
 }
 
@@ -29,6 +30,15 @@ input, textarea {
 
 nav {
   padding: 30px 0;
+}
+.secondary_text {
+  color: rgb(139, 148, 161);
+  font-family: Nunito;
+  font-size: 14px;
+  font-weight: 400;
+
+  letter-spacing: 0%;
+  text-align: left;
 }
 
 .pages_navigation {
@@ -304,6 +314,11 @@ nav {
   display: flex;
   align-items: center;
   gap: 14px;
+}
+.question_list_item_left div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
 .question_list_item_left img {
   width: 40px;

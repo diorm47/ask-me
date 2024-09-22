@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ваш профиль | AskMe</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/profile.css" />
+  </head>
+  <body>
+    <!-- nav -->
+    <nav>
+      <div class="nav_wrapper container">
+        <a href="./index.html">
+          <img src="./assets/logo.svg" alt="" />
+        </a>
+        <div class="nav_list">
+          <a href="./categories.html">
+            <button class="m_btn category_btn">
+              <img src="./assets/icons/category-icon.svg" alt="" />
+              Категории
+            </button></a
+          >
+          <div class="search_input">
+            <img src="./assets/icons/search.svg" alt="" />
+            <input type="text" placeholder="Найти категорию" />
+          </div>
+          <a href="./ask.html">
+            <a href="./ask.html">
+              <button class="m_btn">
+                <img src="./assets/icons/ask.svg" alt="" />
+                Спросить
+              </button></a
+            ></a
+          >
+          <a href="./leaders.html">
+            <button class="m_btn">
+              <img src="./assets/icons/leaders.svg" alt="" />
+              Лидеры
+            </button>
+          </a>
+          <button class="m_btn m_btn_icon">
+            <img src="./assets/icons/light-mode.svg" alt="" />
+          </button>
+          <a href="./profile.html">
+            <button class="m_btn m_btn_icon category_btn">
+              <img src="./assets/icons/user.svg" alt="" /></button
+          ></a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- page navigation -->
+    <div class="pages_navigation container">
+      <a href="./index.html">
+        <p><span>Главная</span></p></a
+      >
+      <img src="./assets/icons/more-s-icon.svg" alt="" />
+      <a href="./categories.html"><p>Категории вопросов</p></a>
+    </div>
+
+    <!-- profile page -->
+    <div class="profile_page container">
+      <div class="profile_menu">
+        <div class="blocks_title">
+          <h2>Ваш профиль</h2>
+        </div>
+        <div class="profile_menu_list tabs_list">
+          <div class="profile_menu_item menu_item" data-id="menu1">
+            <img src="./assets/icons/profile-menu/profile.svg" alt="" />
+            <p class="main_text">Редактировать профиль</p>
+          </div>
+          <div class="profile_menu_item menu_item" data-id="menu1">
+            <img src="./assets/icons/profile-menu/levels.svg" alt="" />
+            <p class="main_text">Уровни</p>
+          </div>
+          <div class="profile_menu_item menu_item" data-id="menu1">
+            <img src="./assets/icons/profile-menu/rules.svg" alt="" />
+            <p class="main_text">Ограничения</p>
+          </div>
+          <div class="profile_menu_item menu_item" data-id="menu4">
+            <img src="./assets/icons/profile-menu/vip.svg" alt="" />
+            <p class="main_text">VIP - статус</p>
+          </div>
+          <div class="profile_menu_item menu_item" data-id="menu5">
+            <img src="./assets/icons/profile-menu/settings.svg" alt="" />
+            <p class="main_text">Настройки</p>
+          </div>
+        </div>
+      </div>
+      <div class="profile_page_content">
+        <div class="user_profile_block">
+          <img
+            class="user_profile_block_bg"
+            src="./assets/images/user-profile-bg.svg"
+            alt=""
+          />
+          <img
+            class="user_profile_block_rect"
+            src="./assets/images/main-rect.svg"
+            alt=""
+          />
+          <div class="user_profile_block_content">
+            <div class="user_profile_block_content_profile">
+              <div class="user_profile_img">
+                <img
+                  class="user_profile_image"
+                  src="./assets/images/top-leader-2.png"
+                  alt=""
+                />
+                <div class="user_profile_img_action">
+                  <img src="./assets/icons/edit.svg" alt="" />
+                </div>
+              </div>
+              <div class="user_profile_block_content_profile_desc">
+                <h4>Александр Нехудой</h4>
+                <p>В сервисе 2 года</p>
+              </div>
+            </div>
+            <div class="user_grades">
+              <div class="user_grade">
+                <p>Баллы 981/1000</p>
+                <div class="user_grade_line">
+                  <div class="user_grade_line_value" style="width: 70%"></div>
+                </div>
+              </div>
+              <div class="user_kpd">
+                <p>КПД 0%</p>
+                <img src="./assets/icons/kpd.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="user_profile_pages">
+          <div class="menu_item_content user_profile_pages_1 active_menu" id="menu0">
+            <div class="user_profile_page_content">
+              <div class="questions_filter">
+                <button class="s_btn">Все</button>
+                <button class="s_btn s_btn_active">Открытые</button>
+                <button class="s_btn">На голосовании</button>
+                <button class="s_btn">Лучшие</button>
+              </div>
+              <div class="user_profile_pages_1_quests_list">
+                <div class="question_list_item">
+                  <div class="question_list_item_left">
+                    <img src="./assets/images/avatar.png" alt="" />
+                    <div>
+                      <p class="main_text">
+                        Можно ли играть в JoJo eyes of heaven с другом на одной
+                        консоли?
+                      </p>
+                      <span>1 час назад</span>
+                    </div>
+                  </div>
+                  <div class="question_list_item_right">
+                    <div class="question_list_item_right_actions">
+                      <button class="s_btn s_btn_icon">
+                        <img src="./assets/icons/share.svg" alt="" />
+                      </button>
+                      <button class="s_btn">Посмотреть</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="question_list_item">
+                  <div class="question_list_item_left">
+                    <img src="./assets/images/avatar.png" alt="" />
+                    <div>
+                      <p class="main_text">
+                        Можно ли играть в JoJo eyes of heaven с другом на одной
+                        консоли?
+                      </p>
+                      <span>1 час назад</span>
+                    </div>
+                  </div>
+                  <div class="question_list_item_right">
+                    <div class="question_list_item_right_actions">
+                      <button class="s_btn s_btn_icon">
+                        <img src="./assets/icons/share.svg" alt="" />
+                      </button>
+                      <button class="s_btn">Посмотреть</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="question_list_item">
+                  <div class="question_list_item_left">
+                    <img src="./assets/images/avatar.png" alt="" />
+                    <div>
+                      <p class="main_text">
+                        Можно ли играть в JoJo eyes of heaven с другом на одной
+                        консоли?
+                      </p>
+                      <span>1 час назад</span>
+                    </div>
+                  </div>
+                  <div class="question_list_item_right">
+                    <div class="question_list_item_right_actions">
+                      <button class="s_btn s_btn_icon">
+                        <img src="./assets/icons/share.svg" alt="" />
+                      </button>
+                      <button class="s_btn">Посмотреть</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="question_list_item">
+                  <div class="question_list_item_left">
+                    <img src="./assets/images/avatar.png" alt="" />
+                    <div>
+                      <p class="main_text">
+                        Можно ли играть в JoJo eyes of heaven с другом на одной
+                        консоли?
+                      </p>
+                      <span>1 час назад</span>
+                    </div>
+                  </div>
+                  <div class="question_list_item_right">
+                    <div class="question_list_item_right_actions">
+                      <button class="s_btn s_btn_icon">
+                        <img src="./assets/icons/share.svg" alt="" />
+                      </button>
+                      <button class="s_btn">Посмотреть</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="question_list_item">
+                  <div class="question_list_item_left">
+                    <img src="./assets/images/avatar.png" alt="" />
+                    <div>
+                      <p class="main_text">
+                        Можно ли играть в JoJo eyes of heaven с другом на одной
+                        консоли?
+                      </p>
+                      <span>1 час назад</span>
+                    </div>
+                  </div>
+                  <div class="question_list_item_right">
+                    <div class="question_list_item_right_actions">
+                      <button class="s_btn s_btn_icon">
+                        <img src="./assets/icons/share.svg" alt="" />
+                      </button>
+                      <button class="s_btn">Посмотреть</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="show_more_btn_wrapper">
+                <button class="show_more_btn">
+                  <img src="./assets/icons/sync.svg" alt="" />
+                  Показать еще
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu_item_content" id="menu1">
+            <div class="user_profile_page_content">
+              <div class="blocks_title">
+                <h2>Редактировать профиль</h2>
+              </div>
+              <div class="user_profile_page_content_wrapper">
+                <div class="profile_input">
+                  <p class="main_text">Ваше имя</p>
+                  <input type="text" placeholder="Николай" />
+                </div>
+                <div class="profile_warning">
+                  <img src="./assets/icons/info.svg" alt="" />
+                  <p class="secondary_text">
+                    Вы можете изменить имя в общих настройках
+                  </p>
+                </div>
+                <div class="profile_input">
+                  <p class="main_text">В чем вы лучше всего разбераетесь?</p>
+                  <textarea
+                    placeholder="Опишите как можно подробнее"
+                  ></textarea>
+                </div>
+                <p class="secondary_text">
+                  Например, “Люблю фотографировать и могу порекомендовать,
+                  <br />
+                  какую технику выбрать”
+                </p>
+                <div class="profile_action_btns">
+                  <button class="m_btn category_btn">Сохранить профиль</button>
+                  <button class="m_btn cancel_btn">Отмена</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="menu_item_content" id="menu2">
+            <div class="user_profile_page_content">
+              <div class="blocks_title">
+                <h2>Редактировать профиль</h2>
+              </div>
+            </div>
+          </div>
+          <div class="menu_item_content" id="menu3">
+            <div class="user_profile_page_content">
+              <div class="blocks_title">
+                <h2>Редактировать профиль</h2>
+              </div>
+            </div>
+          </div> -->
+          <div class="menu_item_content " id="menu4">
+            <div class="user_profile_page_content">
+              <div class="blocks_title">
+                <h2>Активировать VIP-статус</h2>
+              </div>
+              <div class="user_profile_page_content_wrapper">
+                <p class="secondary_text">
+                  VIP - это особые знаки отличия на проекте, выделение ответов и
+                  вопросов в общих списках, в два раза больше баллов за каждый
+                  ответ и увеличение ежедневного лимита вопросов до 100,
+                  возможность скрыть списки вопросов и ответов в своем личном
+                  кабинете, а также отключение рекламы!
+                </p>
+                <div class="vip_status_card">
+                  <div>
+                    <img src="./assets/icons/vip.svg" alt="" />
+                    <p>
+                      100
+                      <span class="secondary_text"
+                        >Продление VIP статуса на 10 дней</span
+                      >
+                    </p>
+                  </div>
+                  <img src="./assets/icons/info.svg" alt="" />
+                </div>
+                <p class="main_text">Выьерите способ платежа</p>
+                <div class="active_user_acc">
+                  <p class="secondary_text">Николай Сморожевский</p>
+                  <div class="logout_btn">
+                    <p class="secondary_text">Выйти</p>
+                    <img src="./assets/icons/logout.svg" alt="" />
+                  </div>
+                </div>
+                <div class="payment_methods">
+                  <div class="payment_method">
+                    <div class="payment_method_type">
+                      <img src="./assets/icons/payment/1.svg" alt="" />
+                      <div>
+                        <p class="main_text">Банковская карта</p>
+                        <p class="secondary_text">
+                          Мир, UnionPay, Visa, Mastercard и другие
+                        </p>
+                      </div>
+                    </div>
+                    <input type="checkbox" name="" id="" />
+                  </div>
+                  <div class="payment_method">
+                    <div class="payment_method_type">
+                      <img src="./assets/icons/payment/2.svg" alt="" />
+                      <div>
+                        <p class="main_text">Баланс AskPay</p>
+                        <p class="secondary_text">100 ₽</p>
+                      </div>
+                    </div>
+                    <input type="checkbox" name="" id="" />
+                  </div>
+                  <div class="payment_method">
+                    <div class="payment_method_type">
+                      <img src="./assets/icons/payment/3.svg" alt="" />
+                      <div>
+                        <p class="main_text">Мобильный платёж</p>
+                      </div>
+                    </div>
+                    <input type="checkbox" name="" id="" />
+                  </div>
+                  <div class="payment_method">
+                    <div class="payment_method_type">
+                      <img src="./assets/icons/payment/4.svg" alt="" />
+                      <div>
+                        <p class="main_text">Другие способы</p>
+                        <p class="secondary_text">
+                          SberPay, Юmoney
+                        </p>
+                      </div>
+                    </div>
+                    <input type="checkbox" name="" id="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="menu_item_content" id="menu5">
+            <div class="user_profile_page_content">
+              <div class="blocks_title">
+                <h2>Настройки</h2>
+              </div>
+              <div class="user_profile_page_content_wrapper">
+                <div class="profile_settings_top_titles">
+                  <p class="main_text">Уведомления</p>
+                  <p class="main_text">Сайт</p>
+                  <p class="main_text">Почта</p>
+                </div>
+                <div class="user_seting_item">
+                  <p class="secondary_text">Получать все уведомления</p>
+                  <input type="checkbox" name="" id="" />
+                  <input type="checkbox" name="" id="" />
+                </div>
+                <div class="user_seting_item">
+                  <p class="secondary_text">Новый ответ на мой вопрос</p>
+                  <input type="checkbox" name="" id="" />
+                  <input type="checkbox" name="" id="" />
+                </div>
+                <div class="user_seting_item">
+                  <p class="secondary_text">Мой вопрос или ответ понравился</p>
+                  <input type="checkbox" name="" id="" />
+                  <input type="checkbox" name="" id="" />
+                </div>
+                <div class="user_seting_item">
+                  <p class="secondary_text">Мне оставили новый комментарий</p>
+                  <input type="checkbox" name="" id="" />
+                  <input type="checkbox" name="" id="" />
+                </div>
+                <div class="user_seting_item">
+                  <p class="secondary_text">Новый голос в опросе</p>
+                  <input type="checkbox" name="" id="" />
+                  <input type="checkbox" name="" id="" />
+                </div>
+                <div class="line container"></div>
+                <div class="user_seting_item">
+                  <p class="main_text">Включить звук для уведомлений</p>
+                  <input type="checkbox" name="" id="" />
+                  <div></div>
+                </div>
+                <div class="profile_warning play_music">
+                  <img src="./assets/icons/play.svg" alt="" />
+                  <p class="secondary_text">Прослушать звук</p>
+                </div>
+                <div class="line container"></div>
+                <div class="user_seting_item">
+                  <p class="main_text">Получать новости проекта</p>
+                  <input type="checkbox" name="" id="" />
+                  <div></div>
+                </div>
+                <div class="line container"></div>
+                <div class="user_seting_item">
+                  <p class="main_text">Найстройки дизайна уведомлений</p>
+                  <input type="checkbox" name="" id="" />
+                  <div></div>
+                </div>
+                <div class="profile_warning play_music">
+                  <p class="secondary_text">Компактный вид</p>
+                </div>
+                <div class="line container"></div>
+                <div class="user_seting_item">
+                  <p class="main_text">Общие настройки</p>
+                </div>
+                <div class="user_seting_item user_seting_item_sec">
+                  <p class="secondary_text">Цветовая тема сайта</p>
+                  <div class="select_themes">
+                    <div class="user_theme_btn">
+                      <input type="checkbox" />
+                      <p class="secondary_text">Авто</p>
+                    </div>
+                    <div class="user_theme_btn">
+                      <input type="checkbox" />
+                      <p class="secondary_text">Светлая</p>
+                    </div>
+                    <div class="user_theme_btn">
+                      <input type="checkbox" />
+                      <p class="secondary_text">Тёмная</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="secondary_text">
+                  Если выбран режим авто, мы включим тёемную <br />
+                  тему с 21:00 до 06:00 по системному времени
+                </p>
+                <div class="line container"></div>
+                <div class="profile_action_btns">
+                  <button class="m_btn cancel_btn">Закрыть</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="profile_stats">
+        <div class="blocks_title">
+          <h2>Статистика</h2>
+        </div>
+        <div class="profile_stats_list">
+          <div class="profile_stats_item">
+            <p class="main_text">Вопросы</p>
+            <div><p class="main_text">0 / 0</p></div>
+          </div>
+          <div class="profile_stats_item">
+            <p class="main_text">Ответы</p>
+            <div><p class="main_text">0 / 0</p></div>
+          </div>
+          <div class="profile_stats_item">
+            <p class="main_text">Подписки</p>
+            <div><p class="main_text">0 / 0</p></div>
+          </div>
+          <div class="profile_stats_item">
+            <p class="main_text">Подписчики</p>
+            <div><p class="main_text">0 / 0</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="line container"></div>
+      <div class="footer_wrapper container">
+        <a href="./index.html">
+          <img src="./assets/logo.svg" alt="" />
+        </a>
+        <a href="#"><p>Пользовательские соглашения</p></a>
+        <a href="#"><p>Служба поддержки</p></a>
+        <a href="#"><p>Файлы Cookie</p></a>
+        <p>Все права защищены © AskMe.ru 2024</p>
+      </div>
+    </footer>
+
+    <!-- scripts -->
+    <script src="./scripts/profile-tabs.js"></script>
+  </body>
+</html>
