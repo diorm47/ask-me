@@ -3,10 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ой! Мы не нашли эту страницу :( | AskMe</title>
+    <title>Вход в аккаунт | AskMe</title>
     <link rel="stylesheet" href="./styles/main.css" />
-    <link rel="stylesheet" href="./styles/404.css" />
-    <link rel="stylesheet" href="./styles/categories.css" />
+    <link rel="stylesheet" href="./styles/login-auth.css" />
   </head>
   <body>
     <!-- nav -->
@@ -27,10 +26,12 @@
             <input type="text" placeholder="Найти категорию" />
           </div>
           <a href="./ask.html">
-            <button class="m_btn">
-              <img src="./assets/icons/ask.svg" alt="" />
-              Спросить
-            </button></a
+            <a href="./ask.html">
+              <button class="m_btn">
+                <img src="./assets/icons/ask.svg" alt="" />
+                Спросить
+              </button></a
+            ></a
           >
           <a href="./leaders.html">
             <button class="m_btn">
@@ -48,7 +49,7 @@
       </div>
     </nav>
 
-    <!-- page navigation -->
+     <!-- page navigation -->
     <div class="pages_navigation container">
       <a href="./index.html">
         <p><span>Главная</span></p></a
@@ -57,17 +58,46 @@
       <a href="./categories.html"><p>Категории вопросов</p></a>
     </div>
 
-    <!-- not found -->
-    <div class="not_found_page container">
-      <img src="./assets/images/not-found.svg" alt="" />
-      <h2>Ой! Мы не нашли эту страницу :(</h2>
-      <p>
-        Попробуйте вернуться обратно или перейти <br />
-        на главную страницу проекта
-      </p>
-      <a href="./index.html"
-        ><button class="s_btn s_btn_active">Вернуться на главную</button></a
-      >
+    <!-- login -->
+    <div class="login_container">
+      <div class="login_block">
+        <img class="login_block_bg" src="./assets/images/login-bg.svg" alt="">
+        <img class="login_block_rect" src="./assets/images/main-rect.svg" alt="">
+        <div class="login_block_content">
+          <div class="login_block_title">
+            <h2>Вход в аккаунт</h2>
+          </div>
+          <div class="login_input">
+            <input type="email" placeholder="Ваша почта" />
+          </div>
+          <div class="login_input">
+            <input type="password" placeholder="Пароль" />
+          </div>
+          <div class="login_content_actions">
+            <button class="m_btn category_btn">Войти в аккаунт</button>
+            <div class="login_socials">
+              <p>
+                Войти через <br />
+                социальные сети
+              </p>
+              <div class="login_socials_list">
+                <div>
+                  <img src="./assets/icons/socials/vk.svg" alt="" />
+                </div>
+                <div>
+                  <img src="./assets/icons/socials/discord.svg" alt="" />
+                </div>
+                <div>
+                  <img src="./assets/icons/socials/tg.svg" alt="" />
+                </div>
+                <div>
+                  <img src="./assets/icons/socials/ok.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- footer -->

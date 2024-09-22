@@ -106,24 +106,7 @@
   align-items: center;
   justify-content: space-between;
 }
-.ask_from_send_btn {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-.ask_from_send_btn p,
-.ask_from_send_btn p a {
-  color: rgb(137, 154, 181);
-  font-family: Nunito;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 19px;
-  letter-spacing: 0%;
-  text-align: left;
-}
-.ask_from_send_btn p a {
-  text-decoration: underline;
-}
+
 
 .chechbox_item {
   display: flex;
