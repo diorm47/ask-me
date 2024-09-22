@@ -239,8 +239,12 @@
 }
 .cancel_btn {
   border-radius: 12px;
-
+  transition: all 0.4s ease;
   background: rgb(239, 237, 245);
+}
+.cancel_btn:hover {
+  transition: all 0.4s ease;
+  background: rgb(213, 206, 237);
 }
 .profile_settings_top_titles {
   display: flex;
@@ -349,9 +353,13 @@
   border-radius: 12px;
   height: 70px;
   padding: 0 24px 0 18px;
-  background: rgba(232, 232, 245, 0.244);
+  background: rgba(232, 232, 245, 0.184);
   margin-bottom: 5px;
   cursor: pointer;
+  transition: all 0.4s ease;
+}
+.payment_method:hover {
+  background: rgba(232, 232, 245, 0.497);
 }
 .payment_method_type {
   display: flex;

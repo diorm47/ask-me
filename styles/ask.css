@@ -54,6 +54,11 @@
   display: flex;
   align-items: center;
   gap: 6px;
+  transition: all 0.4s ease;
+}
+.ask_form_item_actions div:hover {
+  transition: all 0.4s ease;
+  opacity: 0.7;
 }
 .ask_form_item_actions p {
   color: rgb(137, 154, 181);

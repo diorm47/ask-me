@@ -46,6 +46,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.4s ease;
+}
+.load_more_btn:hover {
+  transition: all 0.4s ease;
+  background: rgb(216, 216, 235);
 }
 .load_more_btn p {
   display: flex;

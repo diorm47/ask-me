@@ -114,8 +114,17 @@ nav {
     rgb(100, 107, 255) 38.295%,
     rgb(87, 100, 255) 102.624%
   );
+  transition: all 0.4s ease;
 }
 
+.category_btn:hover {
+  background: linear-gradient(
+    158.51deg,
+    rgb(66, 74, 225) 34.764%,
+    rgb(54, 67, 207) 103.415%
+  ) !important;
+  transition: all 0.4 ease;
+}
 .m_btn_icon {
   padding: 0 17px;
 }
@@ -197,6 +206,10 @@ nav {
   letter-spacing: 0%;
   text-align: left;
   margin-bottom: 8px;
+  cursor: pointer;
+}
+.subject_item h3:hover {
+  text-decoration: underline;
 }
 .subject_item_list_item {
   display: flex;
@@ -224,6 +237,9 @@ nav {
   line-height: 26px;
   letter-spacing: 0%;
   text-align: left;
+}
+.subject_item_list_item p:hover {
+  text-decoration: underline;
 }
 
 .subject_item_more {
@@ -279,6 +295,17 @@ nav {
 .questions_filter .s_btn {
   border: 2px solid rgb(255, 255, 255);
   background: transparent;
+ 
+}
+.questions_filter .s_btn:hover {
+ 
+  color: #fff;
+  background: linear-gradient(
+    158.51deg,
+    rgb(100, 107, 255) 34.764%,
+    rgb(87, 100, 255) 103.415%
+  ) ;
+  border: 1px solid transparent;
 }
 .s_btn_active {
   background: linear-gradient(
@@ -288,8 +315,15 @@ nav {
   ) !important;
   border: none !important;
   color: #fff;
-}
 
+}
+.s_btn_active:hover {
+  background: linear-gradient(
+    158.51deg,
+    rgb(66, 74, 225) 34.764%,
+    rgb(54, 67, 207) 103.415%
+  ) !important;
+}
 .questions_block_search {
   max-width: 100%;
   margin-bottom: 10px;
@@ -393,6 +427,11 @@ nav {
   justify-content: center;
   gap: 14px;
   margin-top: 20px;
+  transition: all 0.4s ease;
+}
+.show_more_btn:hover {
+  transition: all 0.4s ease;
+  opacity: 0.7;
 }
 .show_more_btn_wrapper {
   display: flex;
@@ -434,4 +473,8 @@ nav {
   font-weight: 400;
   line-height: 28px;
   letter-spacing: 0%;
+}
+
+.footer_wrapper a:hover p {
+  text-decoration: underline;
 }
