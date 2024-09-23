@@ -20,11 +20,19 @@
   left: 0;
   top: 0;
   z-index: 1;
+  fill: rgb(255, 255, 255);
+}
+.dark_mode .login_block_bg {
+  fill: rgb(95, 105, 255);
 }
 .login_block_rect {
   position: absolute;
   top: 18px;
   left: 190px;
+  fill: rgb(95, 105, 255);
+}
+.dark_mode .login_block_rect {
+  fill: #fff;
 }
 .login_block_content {
   position: relative;
@@ -41,6 +49,9 @@
   text-align: left;
   margin-bottom: 17px;
 }
+.dark_mode .login_block_title h2 {
+  color: rgb(255, 255, 255);
+}
 .login_input input {
   box-sizing: border-box;
   border: 2px solid rgb(239, 239, 246);
@@ -56,6 +67,14 @@
   letter-spacing: 0%;
   text-align: left;
   margin-bottom: 8px;
+}
+.dark_mode .login_input input {
+  border: 2px solid rgb(124, 131, 250);
+  background: transparent;
+  color: #fff;
+}
+.dark_mode .login_input input::placeholder {
+  color: rgb(255, 255, 255);
 }
 
 .login_socials {
@@ -75,6 +94,9 @@
   letter-spacing: 0%;
   text-align: left;
 }
+.dark_mode .login_socials p {
+  color: #fff;
+}
 
 .login_socials_list {
   display: flex;
@@ -92,7 +114,18 @@
   align-items: center;
   justify-content: center;
 }
+.login_socials_list div svg {
+  fill: rgb(95, 104, 255);
+}
+.dark_mode .login_socials_list div svg {
+  fill: #fff;
+}
 
+.dark_mode
+.login_content_actions button {
+  background: rgb(255, 255, 255);
+  color: rgb(96, 105, 255);
+}
 /* auth */
 
 .auth_page_wrapper {
@@ -107,10 +140,16 @@
   position: relative;
   z-index: 2;
 }
+.dark_mode .auth_page_wrapper {
+  background: rgb(96, 105, 255);
+}
 .auth_form {
   width: 50%;
   border-right: 1px solid rgb(238, 238, 246);
   padding-right: 33px;
+}
+.dark_mode .auth_form {
+  border-right: 1px solid rgb(124, 131, 250);
 }
 
 .auth_form .ask_from_send_btn .m_btn {
@@ -118,11 +157,19 @@
   padding-right: 39px;
   height: 50px;
 }
+.dark_mode .auth_form .ask_from_send_btn .m_btn {
+  background: rgb(255, 255, 255);
+  color: rgb(96, 105, 255);
+}
 .auth_form .ask_from_send_btn p,
 .auth_form .ask_from_send_btn p a {
   font-size: 12px;
   font-weight: 500;
   line-height: 14px;
+}
+.dark_mode .auth_form .ask_from_send_btn p,
+.dark_mode .auth_form .ask_from_send_btn p a {
+  color: rgb(204, 221, 248);
 }
 .select_gender {
   margin: 9px 0 17px;
@@ -138,6 +185,10 @@
   line-height: 18px;
   letter-spacing: 0%;
   text-align: left;
+}
+.dark_mode .select_gender p,
+.dark_mode .select_gender_items div span {
+  color: rgb(255, 255, 255);
 }
 .select_gender_items {
   display: flex;
@@ -176,6 +227,9 @@
 .auth_socials p {
   text-align: center;
 }
+.dark_mode .auth_socials p {
+  color: rgb(255, 255, 255);
+}
 .auth_page {
   position: relative;
   overflow: hidden;
@@ -195,9 +249,18 @@
   z-index: 1;
   left: 0;
   top: 5px;
+  fill: #fff;
+}
+
+.dark_mode .auth_block_bg {
+  fill: rgb(96, 105, 255);
 }
 .auth_block_rect {
   position: absolute;
   left: 190px;
   top: 20px;
+  fill: rgb(96, 105, 255);
+}
+.dark_mode .auth_block_rect {
+  fill: #fff;
 }

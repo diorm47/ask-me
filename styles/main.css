@@ -8,7 +8,9 @@
 body {
   background: #e7e9f6;
 }
-
+.dark_mode {
+  background: #23265b;
+}
 a {
   text-decoration: none;
 }
@@ -39,6 +41,9 @@ nav {
 
   letter-spacing: 0%;
   text-align: left;
+}
+.dark_mode .secondary_text {
+  color: rgb(204, 221, 248);
 }
 
 .pages_navigation {
@@ -104,25 +109,52 @@ nav {
   line-height: 22px;
   letter-spacing: 0%;
   text-align: left;
+  transition: all 0.4s ease;
+}
+.m_btn:hover {
+  transition: all 0.4s ease;
+  background: rgb(84, 91, 222);
+  color: #fff;
+}
+.m_btn svg {
+  transition: all 0.4s ease;
+}
+.m_btn:hover svg {
+  fill: #fff;
+}
+.dark_mode .m_btn {
+  color: #fff;
+  background: rgb(96, 105, 255);
+}
+.m_btn svg {
+  fill: rgb(96, 105, 255);
+}
+.dark_mode .m_btn svg {
+  fill: #fff;
+}
+.mode_toggler {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .category_btn {
   border-radius: 12px;
   color: rgb(255, 255, 255);
-  background: linear-gradient(
-    158.51deg,
-    rgb(100, 107, 255) 38.295%,
-    rgb(87, 100, 255) 102.624%
-  );
+  background: rgb(96, 105, 255);
   transition: all 0.4s ease;
 }
-
+.dark_logo {
+  display: none;
+}
+.dark_mode .dark_logo {
+  display: block;
+}
+.dark_mode .light_logo {
+  display: none;
+}
 .category_btn:hover {
-  background: linear-gradient(
-    158.51deg,
-    rgb(66, 74, 225) 34.764%,
-    rgb(54, 67, 207) 103.415%
-  ) !important;
+  background: rgb(84, 91, 222);
   transition: all 0.4 ease;
 }
 .m_btn_icon {
@@ -161,8 +193,13 @@ nav {
 .search_input input::placeholder {
   color: rgb(137, 154, 181);
 }
+.dark_mode .search_input input {
+  border: 1px solid rgb(96, 105, 255);
+  background: transparent;
+  color: #fff;
+}
 
-.search_input img {
+.search_input svg {
   position: absolute;
   cursor: pointer;
   left: 19px;
@@ -176,6 +213,9 @@ nav {
   line-height: 35px;
   letter-spacing: 0%;
   text-align: left;
+}
+.dark_mode .blocks_title h2 {
+  color: #fff;
 }
 
 .blocks_title {
@@ -196,7 +236,9 @@ nav {
   background-repeat: no-repeat;
   padding: 22px;
 }
-
+.dark_mode .subject_item {
+  background: url(../assets/images/subject-bg-d.svg);
+}
 .subject_item h3 {
   color: rgb(31, 42, 59);
   font-family: Nunito;
@@ -207,6 +249,9 @@ nav {
   text-align: left;
   margin-bottom: 8px;
   cursor: pointer;
+}
+.dark_mode .subject_item h3 {
+  color: #fff;
 }
 .subject_item h3:hover {
   text-decoration: underline;
@@ -228,6 +273,15 @@ nav {
   right: 0;
   top: -16px;
 }
+.dark_mode .subject_item_icon {
+  background: rgb(96, 105, 255);
+}
+.subject_item_icon svg {
+  fill: rgb(96, 105, 255);
+}
+.dark_mode .subject_item_icon svg {
+  fill: #fff;
+}
 
 .subject_item_list_item p {
   color: rgb(76, 91, 114);
@@ -237,6 +291,10 @@ nav {
   line-height: 26px;
   letter-spacing: 0%;
   text-align: left;
+}
+.dark_mode .subject_item_list_item p,
+.dark_mode .subject_item_more p {
+  color: rgb(204, 221, 248);
 }
 .subject_item_list_item p:hover {
   text-decoration: underline;
@@ -265,6 +323,9 @@ nav {
   height: 1px;
   background-color: rgb(224, 226, 239);
 }
+.dark_mode .line {
+  background: rgb(50, 54, 118);
+}
 
 .blocks_title {
   display: flex;
@@ -291,21 +352,27 @@ nav {
   letter-spacing: 0%;
   text-align: left;
 }
+.dark_mode .s_btn {
+  background: transparent;
+  color: #fff;
+}
 
 .questions_filter .s_btn {
   border: 2px solid rgb(255, 255, 255);
   background: transparent;
- 
 }
 .questions_filter .s_btn:hover {
- 
   color: #fff;
   background: linear-gradient(
     158.51deg,
     rgb(100, 107, 255) 34.764%,
     rgb(87, 100, 255) 103.415%
-  ) ;
+  );
   border: 1px solid transparent;
+}
+.dark_mode .questions_filter .s_btn {
+  color: rgb(204, 221, 248);
+  border: 2px solid rgb(50, 54, 118);
 }
 .s_btn_active {
   background: linear-gradient(
@@ -315,7 +382,6 @@ nav {
   ) !important;
   border: none !important;
   color: #fff;
-
 }
 .s_btn_active:hover {
   background: linear-gradient(
@@ -327,6 +393,9 @@ nav {
 .questions_block_search {
   max-width: 100%;
   margin-bottom: 10px;
+}
+.questions_block_search svg {
+  fill: rgb(96, 105, 255);
 }
 
 .questions_block_search .s_btn {
@@ -342,6 +411,38 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: all 0.4s ease;
+}
+.question_list_item:hover {
+  transition: all 0.4s ease;
+  background: rgb(98, 106, 255);
+}
+.question_list_item:hover .s_btn {
+  transition: all 0.4s ease;
+  background: rgb(98, 106, 255);
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
+}
+.question_list_item:hover .s_btn svg {
+  transition: all 0.4s ease;
+  fill: #fff;
+}
+.question_list_item:hover .s_btn_active {
+  transition: all 0.4s ease;
+  background: rgb(255, 255, 255) !important;
+  color: rgb(96, 105, 255);
+}
+.question_list_item:hover .main_text {
+  transition: all 0.4s ease;
+  color: rgb(255, 255, 255);
+}
+.question_list_item:hover .question_list_item_left span {
+  transition: all 0.4s ease;
+  color: rgb(255, 255, 255);
+  color: rgb(195, 199, 251);
+}
+.dark_mode .question_list_item {
+  background: rgb(64, 53, 134);
 }
 
 .question_list_item_left {
@@ -362,6 +463,9 @@ nav {
   object-fit: cover;
   cursor: pointer;
 }
+.dark_mode .question_list_item_left img {
+  border: 1px solid rgb(98, 106, 255);
+}
 
 .main_text {
   color: rgb(31, 42, 59);
@@ -371,6 +475,9 @@ nav {
   line-height: 19px;
   letter-spacing: 0%;
   text-align: left;
+}
+.dark_mode .main_text {
+  color: #fff;
 }
 
 .question_list_item_left span {
@@ -412,6 +519,12 @@ nav {
   display: flex;
   align-items: center;
 }
+.s_btn_icon svg {
+  fill: rgb(96, 105, 255);
+}
+.dark_mode .s_btn_icon svg {
+  fill: #fff;
+}
 
 .show_more_btn {
   color: rgb(139, 148, 161);
@@ -428,6 +541,15 @@ nav {
   gap: 14px;
   margin-top: 20px;
   transition: all 0.4s ease;
+}
+.show_more_btn svg {
+  fill: rgb(98, 106, 255);
+}
+.dark_mode .show_more_btn {
+  color: rgb(204, 221, 248);
+}
+.dark_mode .show_more_btn svg {
+  fill: #fff;
 }
 .show_more_btn:hover {
   transition: all 0.4s ease;
@@ -447,14 +569,14 @@ nav {
 .tops_block_item {
   width: 33%;
 }
-.tops_block_item .question_list_item_left img {
-  width: auto;
-  height: auto;
-  border-radius: 0;
+.tops_block_item_top_subjects svg {
+  fill: #626aff;
+}
+.dark_mode .tops_block_item_top_subjects svg {
+  fill: #fff;
 }
 .tops_block_item_top_subjects .question_list_item {
   padding: 17px 24px;
-  height: 66px;
 }
 
 .footer_wrapper {
@@ -473,6 +595,9 @@ nav {
   font-weight: 400;
   line-height: 28px;
   letter-spacing: 0%;
+}
+.dark_mode .footer_wrapper p {
+  color: rgb(204, 221, 248);
 }
 
 .footer_wrapper a:hover p {

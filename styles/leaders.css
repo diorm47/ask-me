@@ -28,6 +28,9 @@
   justify-content: space-between;
   cursor: pointer;
 }
+.dark_mode .top_leaders_filter_item {
+  border: 2px solid rgb(50, 54, 118);
+}
 .top_leaders_list {
   display: flex;
   align-items: center;
@@ -42,11 +45,21 @@
   width: 33%;
   position: relative;
 }
-.top_leader_card_bg {
+.top_leader_card_bg,
+.top_leader_card_bg_dark {
   position: absolute;
   height: 100%;
   width: 100%;
   z-index: 1;
+}
+.top_leader_card_bg_dark {
+  display: none;
+}
+.dark_mode .top_leader_card_bg {
+  display: none;
+}
+.dark_mode .top_leader_card_bg_dark {
+  display: block;
 }
 .top_leader_card_content {
   position: relative;
@@ -101,7 +114,9 @@
   letter-spacing: 0%;
   text-align: center;
   text-transform: uppercase;
-  
+}
+.dark_mode .top_leader_card_desc h3 {
+  color: #fff;
 }
 .top_leader_card_desc p {
   color: rgb(139, 148, 161);

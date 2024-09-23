@@ -8,7 +8,9 @@
   background: url(../assets/images/category-bg.svg);
 }
 
-
+.dark_mode .categories_list .subject_item {
+  background: url(../assets/images/category-bg-d.svg);
+}
 
 .category_page_block .blocks_title h2 {
   margin-right: 25px;
@@ -32,10 +34,16 @@
   align-items: center;
   gap: 18px;
 }
+.category_page_icon {
+  fill: rgb(96, 105, 255);
+}
 .subcatogory_title div {
   width: 1px;
   height: 22px;
   background: rgb(255, 255, 255);
+}
+.dark_mode .subcatogory_title div {
+  background: rgb(50, 54, 118);
 }
 .load_more_btn {
   width: 100%;
