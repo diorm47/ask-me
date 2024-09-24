@@ -65,7 +65,7 @@
               Лидеры
             </button>
           </a>
-          <button class="m_btn m_btn_icon mode_toggler">
+          <button class="m_btn m_btn_icon mode_toggler" onclick="toggleMode()">
             <svg width="16.000000" height="18.000000">
               <use xlink:href="#light-mode"></use>
             </svg>
@@ -76,6 +76,68 @@
                 <use xlink:href="#user"></use>
               </svg></button
           ></a>
+          <button
+            class="m_btn m_btn_icon category_btn desc_mob_btn"
+            onclick="toggleMenu()"
+          >
+            <img src="./assets/icons/mob-menu.svg" alt="" />
+          </button>
+        </div>
+      </div>
+      <div class="nav_mob_wrapper">
+        <div class="nav_mob_wrapper_nav">
+          <a href="./index.html">
+            <img src="./assets/icons/mob-nav-logo.svg" alt="" />
+          </a>
+          <div>
+            <button
+              class="m_btn m_btn_icon mode_toggler"
+              onclick="toggleMode()"
+            >
+              <svg width="16.000000" height="18.000000">
+                <use xlink:href="#light-mode"></use>
+              </svg>
+            </button>
+            <a href="./profile.html">
+              <button class="m_btn">
+                <img src="./assets/icons/user.svg" alt="" /></button
+            ></a>
+            <button class="m_btn" onclick="toggleMenu()">
+              <img src="./assets/icons/exit-menu.svg" alt="" />
+            </button>
+          </div>
+        </div>
+        <div class="nav_mob_wrapper_list">
+          <a href="./categories.html">
+            <button class="m_btn mob_category_btn">
+              <svg width="18.000000" height="18.000000">
+                <use xlink:href="#category-icon"></use>
+              </svg>
+              Все Категории
+            </button></a
+          >
+          <div class="search_input search_input_mob">
+            <svg width="18.000000" height="18.000000" style="fill: #fff">
+              <use xlink:href="#search-icon"></use>
+            </svg>
+            <input type="text" placeholder="Найти категорию" />
+          </div>
+          <a href="./ask.html" class="mob_sec_item">
+            <button class="m_btn">
+              <svg width="20.000000" height="20.000000">
+                <use xlink:href="#ask"></use>
+              </svg>
+              Спросить
+            </button></a
+          >
+          <a href="./leaders.html" class="mob_sec_item">
+            <button class="m_btn">
+              <svg width="20.000000" height="20.000000">
+                <use xlink:href="#leaders"></use>
+              </svg>
+              Лидеры
+            </button>
+          </a>
         </div>
       </div>
     </nav>
@@ -903,6 +965,13 @@
         <path
           id="Vector"
           d="M8.16 11.72C8.16 11.22 7.96 10.74 7.6 10.39C7.25 10.03 6.77 9.83 6.27 9.83C5.03 9.83 3.13 9.83 1.88 9.83C1.38 9.83 0.9 10.03 0.55 10.39C0.19 10.74 0 11.22 0 11.72L0 16.11C0 16.61 0.19 17.09 0.55 17.44C0.9 17.8 1.38 18 1.88 18L6.27 18C6.77 18 7.25 17.8 7.6 17.44C7.96 17.09 8.16 16.61 8.16 16.11L8.16 11.72ZM17.57 11.72C17.57 11.22 17.38 10.74 17.02 10.39C16.67 10.03 16.19 9.83 15.69 9.83C14.44 9.83 12.54 9.83 11.3 9.83C10.8 9.83 10.32 10.03 9.96 10.39C9.61 10.74 9.41 11.22 9.41 11.72L9.41 16.11C9.41 16.61 9.61 17.09 9.96 17.44C10.32 17.8 10.8 18 11.3 18L15.69 18C16.19 18 16.67 17.8 17.02 17.44C17.38 17.09 17.57 16.61 17.57 16.11L17.57 11.72ZM14.82 8.45L17.44 5.83C18.18 5.09 18.18 3.9 17.44 3.17L14.82 0.55C14.09 -0.19 12.9 -0.19 12.16 0.55L9.54 3.17C8.81 3.9 8.81 5.09 9.54 5.83L12.16 8.45C12.9 9.18 14.09 9.18 14.82 8.45ZM8.16 2.3C8.16 1.8 7.96 1.32 7.6 0.97C7.25 0.61 6.77 0.42 6.27 0.42C5.03 0.42 3.13 0.42 1.88 0.42C1.38 0.42 0.9 0.61 0.55 0.97C0.19 1.32 0 1.8 0 2.3L0 6.69C0 7.19 0.19 7.67 0.55 8.03C0.9 8.38 1.38 8.58 1.88 8.58L6.27 8.58C6.77 8.58 7.25 8.38 7.6 8.03C7.96 7.67 8.16 7.19 8.16 6.69L8.16 2.3Z"
+        />
+      </symbol>
+      <!--  -->
+      <symbol id="search-icon" viewBox="0 0 18 18">
+        <path
+          id="Vector"
+          d="M5.44 14.2C6.75 15.17 8.37 15.75 10.12 15.75C14.47 15.75 18 12.22 18 7.87C18 3.52 14.47 0 10.12 0C5.78 0 2.25 3.52 2.25 7.87C2.25 9.64 2.83 11.27 3.82 12.58L0.33 16.07L0.32 16.08C-0.12 16.52 -0.11 17.23 0.33 17.67C0.54 17.88 0.83 18 1.13 18C1.42 18 1.71 17.88 1.92 17.67L5.44 14.2ZM6.25 11.95C7.26 12.91 8.62 13.5 10.12 13.5C13.23 13.5 15.75 10.98 15.75 7.87C15.75 4.76 13.23 2.25 10.12 2.25C7.02 2.25 4.5 4.76 4.5 7.87C4.5 9.38 5.1 10.75 6.07 11.77C6.11 11.8 6.14 11.83 6.18 11.87C6.21 11.9 6.23 11.92 6.25 11.95Z"
           fill="#FFFFFF"
           fill-opacity="1.000000"
           fill-rule="evenodd"

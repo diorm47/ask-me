@@ -1,11 +1,10 @@
-const modeToggler = document.querySelector(".mode_toggler");
 const body = document.querySelector("body");
 
 if (localStorage.getItem("theme") === "dark") {
   body.classList.add("dark_mode");
 }
 
-modeToggler.addEventListener("click", () => {
+function toggleMode() {
   body.classList.toggle("dark_mode");
 
   if (body.classList.contains("dark_mode")) {
@@ -13,4 +12,12 @@ modeToggler.addEventListener("click", () => {
   } else {
     localStorage.setItem("theme", "light");
   }
-});
+}
+
+// mob menu
+
+function toggleMenu() {
+  document
+    .querySelector(".nav_mob_wrapper")
+    .classList.toggle("nav_mob_wrapper_visible");
+}
