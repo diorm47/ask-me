@@ -92,7 +92,9 @@
   letter-spacing: 0%;
   text-align: left;
 }
-
+.ask_form_item_actions p span:nth-child(2) {
+  display: none;
+}
 .select_category_filters {
   display: flex;
   align-items: center;
@@ -154,4 +156,53 @@
   background: rgb(98, 106, 255);
   cursor: pointer;
   border: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .questions_filter {
+    margin: 0 !important;
+  }
+  .select_category_filters {
+    flex-direction: column;
+  }
+  .select_category_filters .select_category_item {
+    width: 100%;
+  }
+  .asf_form_actions {
+    flex-direction: column-reverse;
+    align-items: start;
+    gap: 15px;
+  }
+  .asf_form_actions .ask_from_send_btn {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .ask_form_item input,
+  .ask_form_item textarea,
+  .select_category_item p {
+    font-size: 14px;
+  }
+  .ask_form_item_actions p span:nth-child(2) {
+    display: block;
+  }
+  .ask_form_item_actions p span:nth-child(1) {
+    display: none;
+  }
+  .ask_form_item_actions {
+    width: 100%;
+    justify-content: space-between;
+    padding-right: 15px;
+  }
+  .ask_form_item_actions p {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    text-transform: capitalize;
+  }
+  .ask_from_send_btn button, .asf_form_actions, .ask_from_send_btn {
+    width: 100%;
+  }
 }

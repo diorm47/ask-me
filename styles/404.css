@@ -38,3 +38,23 @@
   font-weight: 800;
 }
 
+@media only screen and (max-width: 1300px) {
+  .not_found_page img {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .not_found_page {
+    padding: 30px 10px 20px;
+  }
+  .not_found_page h2 {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+  .not_found_page p {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19px;
+    margin-bottom: 20px;
+  }
+}

@@ -10,6 +10,7 @@
 
 .dark_mode .categories_list .subject_item {
   background: url(../assets/images/category-bg-d.svg);
+  background-size: cover;
 }
 
 .category_page_block .blocks_title h2 {
@@ -79,4 +80,61 @@
     rgb(100, 107, 255) 4.748%,
     rgb(87, 100, 255) 110.143%
   );
+}
+
+@media only screen and (max-width: 1470px) {
+  .categories_list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .categories_list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 900px) {
+  .categories_list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .blocks_title {
+    flex-direction: row;
+   flex-wrap: wrap;
+  }
+  .questions_filter {
+    margin-left: 0 !important;
+    width: 100%;
+  }
+  .categories_populars_block  {
+    display: none;
+  }
+  .subcatogory_title {
+    width: 100%;
+  }
+  .subcatogory_title div {
+    display: none;
+  }
+  .sub_category_show_btn {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .categories_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .categories_list .subject_item {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .subject_item_icon {
+    top: -4px;
+  }
+ 
 }

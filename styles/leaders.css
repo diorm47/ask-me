@@ -48,7 +48,6 @@
 .top_leader_card_bg,
 .top_leader_card_bg_dark {
   position: absolute;
-  height: 100%;
   width: 100%;
   z-index: 1;
 }
@@ -64,12 +63,18 @@
 .top_leader_card_content {
   position: relative;
   width: 100%;
-  height: 100%;
+margin-top: 50px;
+padding-bottom: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   z-index: 2;
+  background: rgb(255, 255, 255);
+  border-radius: 22px;
+}
+.dark_mode .top_leader_card_content {
+  background: rgb(51, 46, 113);
 }
 .top_leader_card_img {
   box-sizing: border-box;
@@ -132,4 +137,49 @@
   position: absolute;
   right: 33px;
   top: 13px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .top_leaders_list {
+    flex-direction: column;
+  }
+  .top_leader_card_bg,
+  .top_leader_card_bg_dark {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+  }
+  .top_leader_card {
+    width: 467px;
+  }
+  .project_leaders_grid .question_list_item {
+    flex-direction: row;
+  }
+  .top_leaders_list_wrapper .blocks_title {
+    flex-direction: column;
+    align-items: start;
+  }
+  .top_leaders_filter {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .top_leaders_filter {
+    flex-direction: column;
+  }
+  .top_leaders_filter_item,
+  .project_leaders_grid {
+    width: 100%;
+  }
+  .project_leaders_grids {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .top_leader_card {
+    width: 100%;
+  }
 }

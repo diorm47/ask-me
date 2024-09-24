@@ -34,7 +34,7 @@
 }
 .profile_menu_item svg {
   transition: all 0.4s ease;
-  fill: #5D67FF;
+  fill: #5d67ff;
 }
 .profile_menu_item:hover svg {
   transition: all 0.4s ease;
@@ -42,10 +42,10 @@
 }
 .profile_menu_list .active_menu {
   background: rgb(93, 103, 255);
-} 
+}
 .profile_menu_list .active_menu p {
   color: #fff;
-} 
+}
 .profile_menu_list .active_menu svg {
   transition: all 0.4s ease;
   fill: #fff;
@@ -89,7 +89,7 @@
   position: relative;
   border-radius: 22px;
   padding: 16px 24px 20px;
-
+  overflow: hidden;
   margin-top: 52px;
 }
 
@@ -447,4 +447,137 @@
   width: 20px;
   height: 20px;
   cursor: pointer;
+}
+
+.profile_menu_list_mob {
+  display: none;
+}
+@media only screen and (max-width: 1050px) {
+  .profile_menu_list {
+    display: none;
+  }
+  .profile_page {
+    flex-direction: column;
+  }
+  .user_profile_block {
+    margin-top: 0;
+  }
+  .profile_menu .blocks_title {
+    margin: 0;
+  }
+  .profile_page_content {
+    width: 100%;
+    max-width: 903px;
+  }
+  .profile_menu,
+  .profile_stats {
+    width: 100%;
+  }
+  .user_profile_block_bg,
+  .user_profile_block_bg_dark,
+  .user_profile_block_rect {
+    display: none !important;
+  }
+  .profile_menu_list_mob {
+    display: flex;
+    align-items: center;
+    margin-top: 22px;
+  }
+  .profile_menu_item {
+    width: 50px;
+    height: 50px;
+  }
+  .user_profile_block {
+    background: #fff;
+  }
+  .dark_mode .user_profile_block {
+    border-radius: 12px;
+
+    background: rgb(51, 46, 113);
+  }
+  .profile_menu_list_mob {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .profile_menu_item {
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(239, 240, 246);
+    padding: 0;
+  }
+  .dark_mode .profile_menu_item {
+    border-radius: 14px;
+
+    background: rgb(35, 38, 91);
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .user_profile_page_content .question_list_item_left img {
+    display: none;
+  }
+  .user_profile_page_content .question_list_item_right_actions .s_btn_icon {
+    display: flex;
+  }
+  .user_profile_block_content {
+    flex-direction: column;
+    align-items: start;
+    gap: 0;
+  }
+  .user_profile_image,
+  .user_profile_img {
+    width: 65px;
+    height: 65px;
+  }
+  .user_profile_block_content_profile {
+    gap: 8px;
+  }
+  .user_grades {
+    gap: 18px;
+    padding-left: 73px;
+  }
+  .profile_menu_item {
+    margin: 0;
+  }
+  .dark_mode .tabs_list_m .active_menu {
+    background: rgb(96, 105, 255) !important;
+  }
+  .dark_mode .tabs_list_m .active_menu svg {
+    fill: #fff;
+  }
+  .user_profile_page_content_wrapper p br {
+    display: none;
+  }
+  .profile_action_btns button {
+    font-size: 13px;
+    height: 40px;
+  }
+  .profile_warning p {
+    font-size: 12px;
+  }
+  .profile_settings_top_titles p:last-child {
+    padding-left: 13px;
+  }
+  .profile_settings_top_titles p:first-child,
+  .user_seting_item p:first-child {
+    width: 73%;
+  }
+  .user_profile_page_content .questions_filter button:last-child {
+    display: none;
+  }
+  .user_seting_item_sec {
+    flex-direction: column;
+    align-items: start;
+    gap: 14px;
+  }
+  .user_seting_item input:last-child {
+    margin-left: 40px;
+  }
+  .payment_method_type .secondary_text{
+  max-width: 180px;
+  }
 }
