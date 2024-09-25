@@ -272,7 +272,7 @@
 .dark_mode .secondary_question_block {
   background: rgb(64, 53, 134, 0.5);
 }
- .dark_mode .secondary_question_block .quest_user_title {
+.dark_mode .secondary_question_block .quest_user_title {
   background: rgb(35, 38, 91) !important;
 }
 .blocked_question_block {
@@ -282,9 +282,8 @@
 .dark_mode .blocked_question_block {
   border-radius: 12px;
 
-background: rgb(64, 53, 134);
-opacity: 0.25;
-
+  background: rgb(64, 53, 134);
+  opacity: 0.25;
 }
 .answer_question_block {
   background: rgb(255, 255, 255, 0.5);
@@ -370,6 +369,87 @@ opacity: 0.25;
 .dark_mode .like_btn svg {
   fill: #fff;
 }
-.dark_mode  .main_question_block_item .like_btn svg {
+.dark_mode .main_question_block_item .like_btn svg {
   fill: rgb(96, 105, 255);
+}
+
+.questions_page_list_title {
+  display: none;
+}
+
+@media only screen and (max-width: 1150px) {
+  .question_left_list {
+    display: none;
+  }
+  .questions_page_list {
+    width: 80%;
+  }
+  .question_right_list {
+    width: 20%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .questions_page_list,
+  .question_right_list {
+    width: 100%;
+  }
+  .question_wrapper {
+    flex-direction: column;
+  }
+  .question_right_list .question_list_item {
+    gap: 0 !important;
+  }
+  .questions_page_list {
+    padding-top: 0;
+  }
+  .questions_page_list_title {
+    display: block;
+  }
+  .answer_media img {
+    width: 50%;
+  }
+}
+.question_list_item_left div .quest_user_title  {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .ask_question {
+    flex-direction: column;
+    gap: 18px;
+  }
+  .main_question_block_actions {
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+  }
+  .ask_from_send_btn {
+    flex-direction: column;
+    align-items: start;
+  }
+  .question_list_item_left .quest_user_title {
+    display: none;
+  }
+  .answer_media {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .answer_media img {
+    width: 100%;
+  }
+  .main_question_block_text p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+  .main_question_block_title h2 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+  .question_list_item_left div .quest_user_title {
+    display: flex;
+    position: relative;
+    margin: 0;
+  }
 }
