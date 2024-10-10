@@ -383,6 +383,7 @@ nav {
 .dark_mode .questions_filter .s_btn {
   color: rgb(204, 221, 248);
   border: 2px solid rgb(50, 54, 118);
+  transition: all 0.4s ease;
 }
 .s_btn_active {
   background: linear-gradient(
@@ -401,7 +402,6 @@ nav {
     rgb(54, 67, 207) 103.415%
   ) !important;
   transition: all 0.4s ease;
-
 }
 .questions_block_search {
   max-width: 100%;
@@ -498,7 +498,7 @@ nav {
   font-family: Nunito;
   font-size: 12px;
   font-weight: 400;
-
+  transition: all 0.4s ease;
   letter-spacing: 0%;
   text-align: left;
 }
@@ -526,6 +526,16 @@ nav {
   display: flex;
   align-items: center;
   gap: 5px;
+}
+.question_list_item_right_actions button:hover {
+  background: #fff !important;
+  color: #626aff !important;
+  transition: all 0.4s ease;
+}
+.question_list_item_right_actions button:hover svg {
+  fill: #626aff !important;
+  transition: all 0.4s ease;
+
 }
 .s_btn_icon {
   padding: 0 12px !important;

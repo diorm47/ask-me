@@ -11,7 +11,7 @@
     <link
       rel="icon"
       type="image/png"
-      sizes="32x32" 
+      sizes="32x32"
       href="./assets/favicon/favicon-32x32.png"
     />
     <link
@@ -156,20 +156,46 @@
         <h2>Лидеры по активности</h2>
         <div class="top_leaders_filter">
           <div class="top_leaders_filter_item">
-            <p class="main_text">За неделю</p>
+            <p class="main_text selected_option">За неделю</p>
             <img src="./assets/icons/more-s-icon.svg" alt="" />
+            <div class="top_leaders_filter_menu hidden">
+              <p class="menu_option">За день</p>
+              <p class="menu_option">За неделю</p>
+              <p class="menu_option">За месяц</p>
+              <p class="menu_option">За год</p>
+            </div>
           </div>
           <div class="top_leaders_filter_item">
-            <p class="main_text">По количеству ответов</p>
+            <p class="main_text selected_option">По количеству ответов</p>
             <img src="./assets/icons/more-s-icon.svg" alt="" />
+            <div class="top_leaders_filter_menu hidden">
+              <p class="menu_option">По количеству ответов</p>
+              <p class="menu_option">По количеству ответов</p>
+              <p class="menu_option">По количеству ответов</p>
+              <p class="menu_option">По количеству ответов</p>
+            </div>
           </div>
           <div class="top_leaders_filter_item">
-            <p class="main_text">Категория</p>
+            <p class="main_text selected_option">Категория</p>
             <img src="./assets/icons/more-s-icon.svg" alt="" />
+            <div class="top_leaders_filter_menu hidden">
+              <p class="menu_option">Авто, Мото</p>
+              <p class="menu_option">Развлечения</p>
+              <p class="menu_option">Растения</p>
+              <p class="menu_option">Красота и Здоровье</p>
+              <p class="menu_option">Семья, Дом, Дети</p>
+            </div>
           </div>
           <div class="top_leaders_filter_item">
-            <p class="main_text">Все подкатегории</p>
+            <p class="main_text selected_option">Все подкатегории</p>
             <img src="./assets/icons/more-s-icon.svg" alt="" />
+            <div class="top_leaders_filter_menu hidden">
+              <p class="menu_option">Автоспорт</p>
+              <p class="menu_option">Автострахование</p>
+              <p class="menu_option">Выбор автомобиля, мотоцикла</p>
+              <p class="menu_option">ГИБДД, Обучение, Права</p>
+              <p class="menu_option">ПДД, Вождение</p>
+            </div>
           </div>
         </div>
       </div>
@@ -768,5 +794,26 @@
         />
       </symbol>
     </svg>
+    <script>
+      const categoryItems = document.querySelectorAll(".top_leaders_filter_item");
+
+      categoryItems.forEach((item) => {
+        const selectedOption = item.querySelector(".selected_option");
+        const menu = item.querySelector(".top_leaders_filter_menu");
+
+        item.addEventListener("click", () => {
+          item.classList.toggle("active");
+        });
+
+        const options = item.querySelectorAll(".menu_option");
+        options.forEach((option) => {
+          option.addEventListener("click", (e) => {
+            e.stopPropagation();
+            selectedOption.textContent = option.textContent;
+            item.classList.remove("active");
+          });
+        });
+      });
+    </script>
   </body>
 </html>

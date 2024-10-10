@@ -273,6 +273,20 @@
 }
 .main_question_block_actions_right button {
   background: transparent;
+  transition: all 0.4s ease;
+}
+.main_question_block_actions_right button:hover {
+  background: rgb(96, 105, 255);
+  color: #fff;
+  transition: all 0.4s ease;
+}
+.main_question_block_actions_right button svg {
+ 
+  transition: all 0.4s ease;
+}
+.main_question_block_actions_right button:hover svg {
+  fill: #fff;
+  transition: all 0.4s ease;
 }
 
 .secondary_question_block {

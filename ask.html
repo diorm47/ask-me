@@ -192,16 +192,30 @@
           <div class="select_category_item">
             <div class="select_category_item_title">
               <img src="./assets/icons/category-menu.svg" alt="" />
-              <p>Выберите категорию вопроса</p>
+              <p class="selected_option">Выберите категорию вопроса</p>
             </div>
             <img src="./assets/icons/more-s-icon.svg" alt="" />
+            <div class="select_category_menu hidden">
+              <p class="menu_option">Авто, Мото</p>
+              <p class="menu_option">Развлечения</p>
+              <p class="menu_option">Растения</p>
+              <p class="menu_option">Красота и Здоровье</p>
+              <p class="menu_option">Семья, Дом, Дети</p>
+            </div>
           </div>
           <div class="select_category_item">
             <div class="select_category_item_title">
               <img src="./assets/icons/subcategory-icon.svg" alt="" />
-              <p>Выберите подкатегорию вопроса</p>
+              <p class="selected_option">Выберите подкатегорию вопроса</p>
             </div>
             <img src="./assets/icons/more-s-icon.svg" alt="" />
+            <div class="select_category_menu hidden">
+              <p class="menu_option">Автоспорт</p>
+              <p class="menu_option">Автострахование</p>
+              <p class="menu_option">Выбор автомобиля, мотоцикла</p>
+              <p class="menu_option">ГИБДД, Обучение, Права</p>
+              <p class="menu_option">ПДД, Вождение</p>
+            </div>
           </div>
         </div>
         <div class="asf_form_actions">
@@ -980,5 +994,26 @@
         />
       </symbol>
     </svg>
+    <script>
+      const categoryItems = document.querySelectorAll(".select_category_item");
+
+      categoryItems.forEach((item) => {
+        const selectedOption = item.querySelector(".selected_option");
+        const menu = item.querySelector(".select_category_menu");
+
+        item.addEventListener("click", () => {
+          item.classList.toggle("active");
+        });
+
+        const options = item.querySelectorAll(".menu_option");
+        options.forEach((option) => {
+          option.addEventListener("click", (e) => {
+            e.stopPropagation();
+            selectedOption.textContent = option.textContent;
+            item.classList.remove("active");
+          });
+        });
+      });
+    </script>
   </body>
 </html>

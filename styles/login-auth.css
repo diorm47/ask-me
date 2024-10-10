@@ -127,6 +127,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.4s ease;
+}
+.login_socials_list div:hover {
+  transition: all 0.4s ease;
+background: rgb(239, 239, 246);
 }
 .login_socials_list div svg {
   fill: rgb(95, 104, 255);

@@ -43,7 +43,7 @@
   line-height: 22px;
   letter-spacing: 0%;
   text-align: left;
- padding: 13px 18px;
+  padding: 13px 18px;
 }
 .dark_mode .ask_form_item textarea {
   color: #fff;
@@ -137,7 +137,43 @@
 .dark_mode .select_category_item p {
   color: rgb(255, 255, 255);
 }
+.hidden {
+  display: none !important;
+}
 
+.select_category_item.active {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.select_category_item.active .select_category_menu {
+  display: block !important;
+}
+.select_category_item {
+  position: relative;
+}
+.select_category_menu {
+  width: 100%;
+  background: #fff;
+  position: absolute;
+  top: 55px;
+  left: 0;
+  padding: 19px;
+  padding-top: 0;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.select_category_menu p {
+  color: rgb(31, 42, 59);
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 7px;
+  line-height: 19px;
+}
+
+.select_category_menu p:hover {
+  text-decoration: underline;
+}
 .asf_form_actions {
   display: flex;
   align-items: center;
@@ -202,7 +238,9 @@
     gap: 4px;
     text-transform: capitalize;
   }
-  .ask_from_send_btn button, .asf_form_actions, .ask_from_send_btn {
+  .ask_from_send_btn button,
+  .asf_form_actions,
+  .ask_from_send_btn {
     width: 100%;
   }
 }
