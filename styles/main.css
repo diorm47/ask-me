@@ -17,13 +17,17 @@ a {
 button {
   cursor: pointer;
   border: none;
+  transition: all 0.4s ease;
 }
 
 input,
 textarea {
   outline: none;
 }
-
+textarea {
+  resize: none;
+  overflow: hidden;
+}
 .container {
   width: 100%;
   max-width: 1440px;
@@ -221,6 +225,9 @@ nav {
   color: #fff;
 }
 
+.blocks_title .questions_filter {
+  margin-left: 25px;
+}
 .blocks_title {
   margin-bottom: 16px;
 }
@@ -371,7 +378,7 @@ nav {
     rgb(100, 107, 255) 34.764%,
     rgb(87, 100, 255) 103.415%
   );
-  border: 1px solid transparent;
+  border: 2px solid transparent;
 }
 .dark_mode .questions_filter .s_btn {
   color: rgb(204, 221, 248);
@@ -383,8 +390,9 @@ nav {
     rgb(100, 107, 255) 34.764%,
     rgb(87, 100, 255) 103.415%
   ) !important;
-  border: none !important;
+  border: 2px solid transparent !important;
   color: #fff;
+  transition: all 0.4s ease;
 }
 .s_btn_active:hover {
   background: linear-gradient(
@@ -392,6 +400,8 @@ nav {
     rgb(66, 74, 225) 34.764%,
     rgb(54, 67, 207) 103.415%
   ) !important;
+  transition: all 0.4s ease;
+
 }
 .questions_block_search {
   max-width: 100%;
@@ -803,13 +813,19 @@ nav {
     width: 100%;
   }
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 940px) {
+  .footer_wrapper {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 900px) {
   .blocks_title {
     flex-direction: column;
     align-items: start;
   }
-  .footer_wrapper {
-    flex-direction: column;
+
+  .blocks_title .questions_filter {
+    margin-left: 0;
   }
 }
 

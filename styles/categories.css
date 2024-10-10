@@ -28,7 +28,7 @@
   line-height: 25px;
   letter-spacing: 0%;
   text-align: left;
-  margin-right: 25px;
+ 
 }
 .subcatogory_title {
   display: flex;
@@ -95,7 +95,7 @@
 @media only screen and (max-width: 900px) {
   .categories_list {
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 25px;
   }
 }
 @media only screen and (max-width: 700px) {

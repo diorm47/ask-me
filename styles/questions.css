@@ -75,6 +75,7 @@
   line-height: 26px;
   letter-spacing: 0%;
   background: rgb(255, 255, 255);
+  border: none;
 }
 
 .quest_catogory {
@@ -231,6 +232,11 @@
   align-items: center;
   justify-content: center;
   background: rgb(239, 237, 245);
+  transition: all 0.4s ease;
+}
+.like_btn:hover {
+  transition: all 0.4s ease;
+  opacity: 0.7;
 }
 .like_btn svg {
   fill: rgb(96, 105, 255);
@@ -257,6 +263,9 @@
   border: 3px solid rgb(96, 105, 255);
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.3);
+}
+.best_answer_block .like_btn {
+  background: #fff;
 }
 
 .best_answer_block .quest_user_title {
@@ -308,6 +317,7 @@
 }
 .answer_media img {
   cursor: pointer;
+  width: 50%;
 }
 
 .dark_mode .main_question_block_item {
@@ -387,15 +397,15 @@
   .question_right_list {
     width: 20%;
   }
-}
-@media only screen and (max-width: 900px) {
+  .question_wrapper {
+    flex-direction: column;
+  }
   .questions_page_list,
   .question_right_list {
     width: 100%;
   }
-  .question_wrapper {
-    flex-direction: column;
-  }
+}
+@media only screen and (max-width: 900px) {
   .question_right_list .question_list_item {
     gap: 0 !important;
   }
@@ -409,7 +419,7 @@
     width: 50%;
   }
 }
-.question_list_item_left div .quest_user_title  {
+.question_list_item_left div .quest_user_title {
   display: none;
 }
 

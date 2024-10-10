@@ -21,3 +21,12 @@ function toggleMenu() {
     .querySelector(".nav_mob_wrapper")
     .classList.toggle("nav_mob_wrapper_visible");
 }
+
+const buttons = document.querySelectorAll('.questions_filter .s_btn');
+
+buttons.forEach(button => {
+    button.addEventListener('click', () => {
+        buttons.forEach(btn => btn.classList.remove('s_btn_active'));
+        button.classList.add('s_btn_active');
+    });
+});

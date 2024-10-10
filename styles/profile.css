@@ -286,8 +286,8 @@
   border-radius: 12px;
   height: 98px;
   width: 100%;
-  padding-top: 15px;
-  text-indent: 19px;
+ 
+ padding: 15px 18px;
 }
 
 .profile_action_btns {
